@@ -32,11 +32,19 @@ export const technologies: Technology[] = [
     projects: ['fincore'],
   },
   {
+    id: 'javascript',
+    name: 'JavaScript',
+    category: 'language',
+    description: 'Core web programming language underpinning the interactive frontend ecosystem.',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    displayPriority: 3,
+  },
+  {
     id: 'sql',
     name: 'SQL',
     category: 'language',
     description: 'Hand-written queries via psycopg2 for precise control over PostgreSQL data access.',
-    displayPriority: 3,
+    displayPriority: 4,
     projects: ['fincore'],
   },
 
@@ -111,6 +119,22 @@ export const technologies: Technology[] = [
   // ── Frontend ──────────────────────────────────────────────────────────────
 
   {
+    id: 'html5',
+    name: 'HTML5',
+    category: 'frontend',
+    description: 'Semantic markup for accessible and performant web architecture.',
+    url: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
+    displayPriority: 18,
+  },
+  {
+    id: 'css3',
+    name: 'CSS3',
+    category: 'frontend',
+    description: 'Modern styling features and layout capabilities underpinning responsive web design.',
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    displayPriority: 19,
+  },
+  {
     id: 'nextdotjs',
     name: 'Next.js',
     category: 'frontend',
@@ -150,12 +174,44 @@ export const technologies: Technology[] = [
   // ── Backend ───────────────────────────────────────────────────────────────
 
   {
+    id: 'flask',
+    name: 'Flask',
+    category: 'backend',
+    description: 'Lightweight WSGI web application framework for building Python web services.',
+    url: 'https://flask.palletsprojects.com',
+    displayPriority: 29,
+  },
+  {
+    id: 'django',
+    name: 'Django',
+    category: 'backend',
+    description: 'High-level Python web framework that encourages rapid development and clean design.',
+    url: 'https://www.djangoproject.com',
+    displayPriority: 30,
+  },
+  {
+    id: 'nodedotjs',
+    name: 'Node.js',
+    category: 'backend',
+    description: 'JavaScript runtime environment executing JavaScript code server-side.',
+    url: 'https://nodejs.org',
+    displayPriority: 31,
+  },
+  {
+    id: 'express',
+    name: 'Express.js',
+    category: 'backend',
+    description: 'Fast, unopinionated, minimalist web framework for Node.js.',
+    url: 'https://expressjs.com',
+    displayPriority: 32,
+  },
+  {
     id: 'fastapi',
     name: 'FastAPI',
     category: 'backend',
     description: 'High-performance Python web framework serving the FinCore REST API.',
     url: 'https://fastapi.tiangolo.com',
-    displayPriority: 30,
+    displayPriority: 33,
     projects: ['fincore'],
   },
 
@@ -172,12 +228,28 @@ export const technologies: Technology[] = [
     projects: ['fincore'],
   },
   {
+    id: 'mysql',
+    name: 'MySQL',
+    category: 'data',
+    description: 'Open-source relational database management system.',
+    url: 'https://www.mysql.com',
+    displayPriority: 41,
+  },
+  {
+    id: 'mongodb',
+    name: 'MongoDB',
+    category: 'data',
+    description: 'NoSQL document-oriented database program.',
+    url: 'https://www.mongodb.com',
+    displayPriority: 42,
+  },
+  {
     id: 'supabase',
     name: 'Supabase',
     category: 'data',
     description: 'Managed PostgreSQL hosting used as the production database for FinCore.',
     url: 'https://supabase.com',
-    displayPriority: 41,
+    displayPriority: 43,
     projects: ['fincore'],
   },
   {
@@ -186,7 +258,7 @@ export const technologies: Technology[] = [
     category: 'data',
     description: 'Vector database used for semantic similarity search in the FinQuery RAG pipeline.',
     url: 'https://qdrant.tech',
-    displayPriority: 42,
+    displayPriority: 44,
     projects: ['finquery'],
   },
 
@@ -213,6 +285,22 @@ export const technologies: Technology[] = [
 
   // ── Infrastructure / DevOps ───────────────────────────────────────────────
 
+  {
+    id: 'git',
+    name: 'Git',
+    category: 'infrastructure',
+    description: 'Distributed version control system for tracking changes in source code.',
+    url: 'https://git-scm.com',
+    displayPriority: 58,
+  },
+  {
+    id: 'amazonwebservices',
+    name: 'AWS',
+    category: 'infrastructure',
+    description: 'Comprehensive cloud computing platform provided by Amazon.',
+    url: 'https://aws.amazon.com',
+    displayPriority: 59,
+  },
   {
     id: 'docker',
     name: 'Docker',

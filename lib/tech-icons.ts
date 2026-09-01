@@ -18,27 +18,37 @@
 import {
   siPython,
   siTypescript,
+  siJavascript,
+  siHtml5,
+  siCss,
   siNextdotjs,
   siReact,
   siTailwindcss,
+  siStreamlit,
   siFastapi,
+  siFlask,
+  siDjango,
+  siNodedotjs,
+  siExpress,
   siPostgresql,
+  siMysql,
+  siMongodb,
+  siSupabase,
+  siQdrant,
   siGooglegemini,
   siLangchain,
   siOllama,
-  siStreamlit,
   siPytorch,
   siScikitlearn,
   siWeightsandbiases,
   siPandas,
   siOpencv,
   siDocker,
+  siGit,
   siGithubactions,
   siVercel,
   siRailway,
   siFirebase,
-  siSupabase,
-  siQdrant,
 } from 'simple-icons'
 
 export interface TechIconData {
@@ -61,6 +71,7 @@ const iconMap: Record<string, TechIconData> = {
   // Languages
   python: { path: siPython.path, hex: siPython.hex, title: siPython.title },
   typescript: { path: siTypescript.path, hex: siTypescript.hex, title: siTypescript.title },
+  javascript: { path: siJavascript.path, hex: siJavascript.hex, title: siJavascript.title },
   // sql has no simple-icon — intentionally absent
 
   // AI / ML
@@ -77,16 +88,24 @@ const iconMap: Record<string, TechIconData> = {
   },
 
   // Frontend
+  html5: { path: siHtml5.path, hex: siHtml5.hex, title: siHtml5.title },
+  css3: { path: siCss.path, hex: siCss.hex, title: siCss.title },
   nextdotjs: { path: siNextdotjs.path, hex: siNextdotjs.hex, title: siNextdotjs.title },
   react: { path: siReact.path, hex: siReact.hex, title: siReact.title },
   tailwindcss: { path: siTailwindcss.path, hex: siTailwindcss.hex, title: siTailwindcss.title },
   streamlit: { path: siStreamlit.path, hex: siStreamlit.hex, title: siStreamlit.title },
 
   // Backend
+  flask: { path: siFlask.path, hex: siFlask.hex, title: siFlask.title },
+  django: { path: siDjango.path, hex: siDjango.hex, title: siDjango.title },
+  nodedotjs: { path: siNodedotjs.path, hex: siNodedotjs.hex, title: siNodedotjs.title },
+  express: { path: siExpress.path, hex: siExpress.hex, title: siExpress.title },
   fastapi: { path: siFastapi.path, hex: siFastapi.hex, title: siFastapi.title },
 
   // Data / Storage
   postgresql: { path: siPostgresql.path, hex: siPostgresql.hex, title: siPostgresql.title },
+  mysql: { path: siMysql.path, hex: siMysql.hex, title: siMysql.title },
+  mongodb: { path: siMongodb.path, hex: siMongodb.hex, title: siMongodb.title },
   supabase: { path: siSupabase.path, hex: siSupabase.hex, title: siSupabase.title },
   qdrant: { path: siQdrant.path, hex: siQdrant.hex, title: siQdrant.title },
 
@@ -95,6 +114,7 @@ const iconMap: Record<string, TechIconData> = {
   opencv: { path: siOpencv.path, hex: siOpencv.hex, title: siOpencv.title },
 
   // Infrastructure
+  git: { path: siGit.path, hex: siGit.hex, title: siGit.title },
   docker: { path: siDocker.path, hex: siDocker.hex, title: siDocker.title },
   githubactions: { path: siGithubactions.path, hex: siGithubactions.hex, title: siGithubactions.title },
   vercel: { path: siVercel.path, hex: siVercel.hex, title: siVercel.title },
