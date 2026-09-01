@@ -81,9 +81,9 @@ export function Hero() {
             </span>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/dharanimurugaraj"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 border-b border-border pb-1 font-mono text-xs tracking-[0.25em] text-foreground transition-colors hover:border-accent hover:text-accent"
           >
             GITHUB
