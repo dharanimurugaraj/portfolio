@@ -1,7 +1,7 @@
 import { ArrowUpRight } from '@/components/arrow-up-right'
 import { HeroVisual } from '@/components/hero-visual'
 
-const heroLines = ['BUILDING', 'INTELLIGENT', 'SYSTEMS.']
+const heroLines = ['DHARANI', 'MURUGARAJ']
 const stages = ['RESEARCH', 'MODELS', 'SYSTEMS', 'PRODUCTS']
 
 export function Hero() {
@@ -29,40 +29,38 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto flex min-h-svh w-full max-w-[100rem] flex-col justify-center px-6 pt-28 pb-16 md:px-12">
-        {/* Technical metadata */}
+        {/* Editorial Statement */}
         <div className="reveal mb-10 flex items-baseline gap-6" style={{ ['--reveal-delay' as string]: '0.5s' }}>
-          <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground">AI · SOFTWARE · RESEARCH</span>
-          <span aria-hidden="true" className="hidden h-px w-16 bg-border sm:block" />
-          <span className="hidden font-mono text-xs tracking-[0.3em] text-muted-foreground sm:inline">2026</span>
+          <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground">BUILDING INTELLIGENT SYSTEMS.</span>
         </div>
 
         {/* Display typography with staggered line reveals */}
-        <h1 className="font-sans text-[clamp(3.25rem,11vw,10.5rem)] leading-[0.92] font-bold tracking-[-0.03em] text-balance">
-          {heroLines.map((line, i) => (
-            <span
-              key={line}
-              className="reveal-clip block"
-              style={{ ['--reveal-delay' as string]: `${0.7 + i * 0.12}s` }}
-            >
-              <span>
-                {line === 'SYSTEMS.' ? (
-                  <>
-                    SYSTEMS<span className="text-accent">.</span>
-                  </>
-                ) : (
-                  line
-                )}
+        <div className="flex flex-col gap-2 md:gap-4">
+          <h1 className="font-sans text-[clamp(3.25rem,11vw,10.5rem)] leading-[0.92] font-bold tracking-[-0.03em] text-balance">
+            {heroLines.map((line, i) => (
+              <span
+                key={line}
+                className="reveal-clip block"
+                style={{ ['--reveal-delay' as string]: `${0.7 + i * 0.12}s` }}
+              >
+                <span>{line}</span>
               </span>
-            </span>
-          ))}
-        </h1>
+            ))}
+          </h1>
+          <p
+            className="reveal font-mono text-sm tracking-[0.2em] text-foreground sm:text-base md:mt-2"
+            style={{ ['--reveal-delay' as string]: '1.0s' }}
+          >
+            AI FULL-STACK DEVELOPER
+          </p>
+        </div>
 
         {/* Supporting statement */}
         <p
           className="reveal mt-10 max-w-md font-sans text-base leading-relaxed text-muted-foreground md:text-lg"
           style={{ ['--reveal-delay' as string]: '1.2s' }}
         >
-          Dharani designs and builds intelligent products and systems — carrying ideas from research concepts to
+          I design and build intelligent products and systems — carrying ideas from research concepts to
           functioning software.
         </p>
 

@@ -133,7 +133,7 @@ export function SelectedWork() {
       {/* Section header */}
       <div className="mx-auto w-full max-w-[100rem] px-6 pt-28 md:px-12 md:pt-36">
         <div className="flex items-baseline justify-between">
-          <h2 className="font-sans text-sm font-semibold tracking-[0.3em]">SELECTED WORK</h2>
+          <h2 className="font-sans text-sm font-semibold tracking-[0.3em]">04 — SELECTED WORK</h2>
           <span className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground">
             {String(projects.length).padStart(2, '0')} PROJECTS / 2025—2026
           </span>
@@ -164,12 +164,11 @@ export function SelectedWork() {
         ))}
       </div>
 
-      {/* 04 — FinQuery, supporting index row */}
-      <div className="mx-auto w-full max-w-[100rem] px-6 pb-28 md:px-12">
+      {/* 04 — FinQuery */}
+      <div className="mx-auto w-full max-w-[100rem] px-6 py-24 md:px-12 md:py-32">
         {supporting.map((p) => (
-          <SupportingRow key={p.slug} project={p} />
+          <FeatureSpread key={p.slug} project={p} flip />
         ))}
-        <div className="h-px w-full bg-border" />
       </div>
     </section>
   )

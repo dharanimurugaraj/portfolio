@@ -16,7 +16,7 @@ export interface ContactData {
 }
 
 export const contact: ContactData = {
-  eyebrow: '03 — CONTACT',
+  eyebrow: '05 — CONTACT',
   heading: "Let's build something that works.",
   supportingText:
     'Whether you are building complex software systems, exploring AI integration, or looking for an engineer who spans research and production — my inbox is open.',

@@ -12,10 +12,10 @@ export default function Home() {
       <SiteNav />
       <main>
         <Hero />
-        <SelectedWork />
-        <Technology />
         <About />
         <Experience />
+        <Technology />
+        <SelectedWork />
         <Contact />
       </main>
       <footer className="dark bg-background text-foreground">

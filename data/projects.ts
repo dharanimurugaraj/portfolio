@@ -117,7 +117,7 @@ export const projects: Project[] = [
     // TODO: Add real GitHub, demo, or other links
     links: [],
     image: '/images/projects/finquery/thumbnail.png',
-    imageAlt: 'Minimal line chart with a cobalt highlighted segment',
+    imageAlt: 'Natural-language query "show Q3 revenue" with fan lines pointing to a highlighted cell in an abstract financial data table',
     featured: true,
     published: true,
     // TODO: Populate case study content

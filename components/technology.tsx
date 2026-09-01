@@ -73,6 +73,9 @@ export function Technology() {
       {/* Section Header */}
       <div className="mx-auto w-full max-w-[100rem] px-6 py-24 md:px-12 md:py-32">
         <div className="max-w-2xl mb-24 md:mb-32">
+          <p className="mb-6 font-mono text-xs tracking-[0.3em] text-muted-foreground">
+            03 — TECHNOLOGY
+          </p>
           <h2 className="font-sans text-[clamp(2.5rem,5vw,4.5rem)] leading-none font-bold tracking-[-0.02em]">
             TECHNOLOGY
           </h2>
