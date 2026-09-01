@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ArrowUpRight } from '@/components/arrow-up-right'
-import { projects, type Project } from '@/lib/projects'
+import { getFeaturedProjects } from '@/data/projects'
+import type { Project } from '@/data/types'
 
 function ProjectMeta({ project, className = '' }: { project: Project; className?: string }) {
   return (
@@ -22,7 +23,7 @@ function ProjectMeta({ project, className = '' }: { project: Project; className?
 
 function FeatureSpread({ project, flip }: { project: Project; flip?: boolean }) {
   return (
-    <a href={project.href ?? '#'} className="group block">
+    <a href={`/work/${project.slug}`} className="group block">
       <article className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         {/* Index + title column */}
         <div className={`flex flex-col justify-between lg:col-span-5 ${flip ? 'lg:order-2 lg:col-start-8' : ''}`}>
@@ -62,7 +63,7 @@ function FeatureSpread({ project, flip }: { project: Project; flip?: boolean }) 
 
 function ResearchSpread({ project }: { project: Project }) {
   return (
-    <a href={project.href ?? '#'} className="group block">
+    <a href={`/work/${project.slug}`} className="group block">
       <article className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-4 lg:col-start-2">
           <div className="overflow-hidden border border-border">
@@ -97,7 +98,7 @@ function ResearchSpread({ project }: { project: Project }) {
 
 function SupportingRow({ project }: { project: Project }) {
   return (
-    <a href={project.href ?? '#'} className="group block border-t border-border py-10">
+    <a href={`/work/${project.slug}`} className="group block border-t border-border py-10">
       <article className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
         <span className="font-mono text-xs tracking-[0.3em] text-muted-foreground lg:col-span-1">{project.index}</span>
         <h3 className="font-sans text-2xl font-bold tracking-[-0.02em] md:text-3xl lg:col-span-4">
@@ -120,6 +121,7 @@ function SupportingRow({ project }: { project: Project }) {
 }
 
 export function SelectedWork() {
+  const projects = getFeaturedProjects()
   const light = projects.filter((p) => !p.dark)
   const featureLight = light.filter((p) => p.emphasis === 'feature')
   const research = light.filter((p) => p.emphasis === 'research')
