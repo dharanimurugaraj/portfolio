@@ -56,23 +56,53 @@ export interface ResearchMeta {
 }
 
 // ─── Case Study Content ───────────────────────────────────────────────────────
-// All fields are optional — populate progressively as case studies are written.
-// Content is plain prose; components handle typographic rendering.
+// Structured section-based model. Each project defines its own ordered sections.
+// Components render sections dynamically — no project needs every section type.
+
+/** A key–value metric displayed in a compact grid. */
+export interface CaseStudyMetric {
+  label: string
+  value: string
+}
+
+/** A figure/media block within a section. */
+export interface CaseStudyFigure {
+  /** Path to image, diagram, or screenshot. */
+  src: string
+  alt: string
+  /** Optional monospace caption rendered below the figure. */
+  caption?: string
+  /** Aspect ratio hint for layout. Defaults to 'landscape'. */
+  aspect?: 'landscape' | 'portrait' | 'square'
+}
+
+/** A single narrative section within a case study. */
+export interface CaseStudySection {
+  /** Unique key within this case study. Used as React key and anchor ID. */
+  id: string
+  /** Small monospace label above the title. e.g. '01 — OVERVIEW' */
+  eyebrow?: string
+  /** Section heading. */
+  title: string
+  /** Body paragraphs. Each string is one paragraph. */
+  content: string[]
+  /** Optional structured metrics displayed alongside or below the content. */
+  metrics?: CaseStudyMetric[]
+  /** Optional figures/media. */
+  figures?: CaseStudyFigure[]
+  /** Optional code or technical snippet. Rendered in a monospace block. */
+  codeBlock?: {
+    language?: string
+    code: string
+    caption?: string
+  }
+}
 
 export interface CaseStudyContent {
-  /** 2–4 sentence editorial lead paragraph. */
-  overview?: string
-  problem?: string
-  approach?: string
-  /** System design narrative. */
-  architecture?: string
-  implementation?: string
-  /** Model choices, training setup, evaluation strategy. */
-  aiDetails?: string
-  engineeringDecisions?: string
-  challenges?: string
-  results?: string
-  lessonsLearned?: string
+  /** 2–4 sentence editorial lead paragraph displayed prominently below the hero. */
+  overview: string
+  /** Ordered narrative sections. Components render these in array order. */
+  sections: CaseStudySection[]
 }
 
 // ─── Project ─────────────────────────────────────────────────────────────────
