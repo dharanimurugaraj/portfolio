@@ -8,7 +8,10 @@ export function Hero() {
   return (
     <section id="top" className="relative min-h-svh overflow-hidden">
       {/* Interactive network visual — right-weighted, behind type */}
-      <div className="reveal pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block" style={{ ['--reveal-delay' as string]: '1.5s' }}>
+      <div
+        className="reveal pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block"
+        style={{ ['--reveal-delay' as string]: '1.5s' }}
+      >
         <HeroVisual className="h-full w-full text-foreground" />
         {/* stage labels beside the network */}
         <div className="absolute inset-y-0 right-6 flex flex-col justify-center gap-0 md:right-12">
@@ -36,7 +39,11 @@ export function Hero() {
         {/* Display typography with staggered line reveals */}
         <h1 className="font-sans text-[clamp(3.25rem,11vw,10.5rem)] leading-[0.92] font-bold tracking-[-0.03em] text-balance">
           {heroLines.map((line, i) => (
-            <span key={line} className="reveal-clip block" style={{ ['--reveal-delay' as string]: `${0.7 + i * 0.12}s` }}>
+            <span
+              key={line}
+              className="reveal-clip block"
+              style={{ ['--reveal-delay' as string]: `${0.7 + i * 0.12}s` }}
+            >
               <span>
                 {line === 'SYSTEMS.' ? (
                   <>
@@ -60,7 +67,10 @@ export function Hero() {
         </p>
 
         {/* CTAs */}
-        <div className="reveal mt-12 flex flex-wrap items-center gap-8" style={{ ['--reveal-delay' as string]: '1.7s' }}>
+        <div
+          className="reveal mt-12 flex flex-wrap items-center gap-8"
+          style={{ ['--reveal-delay' as string]: '1.7s' }}
+        >
           <a
             href="#work"
             className="group inline-flex items-center gap-3 bg-primary px-7 py-4 font-mono text-xs tracking-[0.25em] text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"

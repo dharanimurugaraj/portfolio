@@ -6,7 +6,9 @@ function ProjectMeta({ project, className = '' }: { project: Project; className?
   return (
     <div className={`flex items-baseline justify-between border-t border-border pt-4 ${className}`}>
       <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-        <span className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground">{project.tags.join(' / ')}</span>
+        <span className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground">
+          {project.tags.join(' / ')}
+        </span>
       </div>
       <div className="flex items-baseline gap-6">
         <span className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground">{project.year}</span>
@@ -33,7 +35,9 @@ function FeatureSpread({ project, flip }: { project: Project; flip?: boolean }) 
                 </span>
               ))}
             </h3>
-            <p className="mt-8 max-w-sm text-sm leading-relaxed text-muted-foreground md:text-base">{project.summary}</p>
+            <p className="mt-8 max-w-sm text-sm leading-relaxed text-muted-foreground md:text-base">
+              {project.summary}
+            </p>
           </div>
           <ProjectMeta project={project} className="mt-10 lg:hidden" />
         </div>
