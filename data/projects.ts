@@ -15,6 +15,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { Project } from './types'
+import { fincoreCaseStudy } from './case-studies/fincore'
 
 export const projects: Project[] = [
   // ── 01 — Fincore ─────────────────────────────────────────────────────────
@@ -33,39 +34,15 @@ export const projects: Project[] = [
     dark: false,
     technologies: ['python', 'typescript', 'nextdotjs', 'react', 'tailwindcss', 'fastapi', 'postgresql', 'supabase', 'googlegemini', 'pandas', 'docker', 'githubactions', 'vercel', 'railway', 'firebase'],
     tags: ['AI', 'FULL STACK', 'AUTOMATION'],
-    // TODO: Add real GitHub, demo, or other links
-    links: [],
+    links: [
+      { type: 'demo', label: 'Live Demo', url: 'https://fincore-accounting-automation.vercel.app/' },
+      { type: 'github', label: 'GitHub', url: 'https://github.com/dharanimurugaraj/fincore-accounting-automation' },
+    ],
     image: '/images/projects/fincore/thumbnail.png',
     imageAlt: 'Abstract ledger grid with cobalt highlighted rows representing automated accounting flows',
     featured: true,
     published: true,
-    // Minimal fixture to test the case study system components
-    caseStudy: {
-      overview:
-        'An AI accounting automation platform that reads, classifies, and reconciles financial records — turning manual bookkeeping into a supervised, auditable pipeline.',
-      sections: [
-        {
-          id: 'architecture',
-          eyebrow: '01 — SYSTEM DESIGN',
-          title: 'Three-Stage Pipeline',
-          content: [
-            'The core architecture relies on a deterministic three-stage pipeline that ensures auditable and reproducible results. We use Gemini 2.5 Flash Lite for initial unstructured extraction, followed by a deterministic Python computation engine.',
-          ],
-          metrics: [
-            { label: 'Extraction Model', value: 'Gemini 2.5 Flash Lite' },
-            { label: 'Backend Engine', value: 'FastAPI / Python' },
-          ],
-          codeBlock: {
-            language: 'python',
-            caption: 'PIPELINE RUNNER (SIMPLIFIED)',
-            code: `def process_records(raw_data: List[dict]) -> Report:
-    extracted = llm_extractor.parse(raw_data)
-    reconciled = compute_engine.reconcile(extracted)
-    return report_generator.build_excel(reconciled)`,
-          },
-        },
-      ],
-    },
+    caseStudy: fincoreCaseStudy,
   },
 
   // ── 02 — LLM Evaluation Framework ────────────────────────────────────────
