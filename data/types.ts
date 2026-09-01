@@ -6,7 +6,7 @@
 
 // ─── Technology Registry ──────────────────────────────────────────────────────
 
-export type TechCategory = 'language' | 'ai-ml' | 'frontend' | 'backend' | 'data' | 'infrastructure'
+export type TechCategory = 'language' | 'ai-ml' | 'frontend' | 'backend' | 'data' | 'infrastructure' | 'tools'
 
 export interface Technology {
   /** Unique key used to reference this technology from projects. e.g. 'pytorch' */
@@ -20,6 +20,12 @@ export interface Technology {
   url?: string
   /** Lower number = shown earlier in the tech stack section. */
   displayPriority?: number
+  /**
+   * Project slugs that use this technology.
+   * e.g. ['fincore', 'medvision']
+   * Derived from the projects in data/projects.ts that list this technology's ID.
+   */
+  projects?: string[]
 }
 
 // ─── Project Links ────────────────────────────────────────────────────────────

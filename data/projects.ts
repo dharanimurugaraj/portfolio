@@ -31,8 +31,7 @@ export const projects: Project[] = [
     year: '2026',
     emphasis: 'feature',
     dark: false,
-    // TODO: Replace with real technology IDs from data/technologies.ts
-    technologies: [],
+    technologies: ['python', 'typescript', 'nextdotjs', 'react', 'tailwindcss', 'fastapi', 'postgresql', 'supabase', 'googlegemini', 'pandas', 'docker', 'githubactions', 'vercel', 'railway', 'firebase'],
     tags: ['AI', 'FULL STACK', 'AUTOMATION'],
     // TODO: Add real GitHub, demo, or other links
     links: [],
@@ -58,8 +57,7 @@ export const projects: Project[] = [
     year: '2026',
     emphasis: 'feature',
     dark: true,
-    // TODO: Replace with real technology IDs from data/technologies.ts
-    technologies: [],
+    technologies: ['python', 'googlegemini', 'ragas', 'weightsandbiases', 'streamlit', 'githubactions'],
     tags: ['LLM', 'RELIABILITY', 'EXPERIMENTATION'],
     // TODO: Add real GitHub, demo, or other links
     links: [],
@@ -85,8 +83,7 @@ export const projects: Project[] = [
     year: '2025',
     emphasis: 'research',
     dark: false,
-    // TODO: Replace with real technology IDs from data/technologies.ts
-    technologies: [],
+    technologies: ['python', 'pytorch', 'scikitlearn', 'opencv'],
     tags: ['DEEP LEARNING', 'MEDICAL IMAGING', 'RESEARCH'],
     // TODO: Add real links (paper, presentation, dataset, etc.)
     links: [],
@@ -113,8 +110,7 @@ export const projects: Project[] = [
     year: '2025',
     emphasis: 'supporting',
     dark: false,
-    // TODO: Replace with real technology IDs from data/technologies.ts
-    technologies: [],
+    technologies: ['python', 'langchain', 'ollama', 'streamlit', 'qdrant'],
     tags: ['NLP', 'FINANCE'],
     // TODO: Add real GitHub, demo, or other links
     links: [],
