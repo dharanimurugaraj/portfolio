@@ -16,6 +16,7 @@
 
 import type { Project } from './types'
 import { fincoreCaseStudy } from './case-studies/fincore'
+import { medvisionCaseStudy } from './case-studies/medvision'
 
 export const projects: Project[] = [
   // ── 01 — Fincore ─────────────────────────────────────────────────────────
@@ -93,8 +94,7 @@ export const projects: Project[] = [
     imageAlt: 'Halftone medical scan cross-section with a cobalt segmentation outline',
     featured: true,
     published: true,
-    // TODO: Populate case study content
-    caseStudy: undefined,
+    caseStudy: medvisionCaseStudy,
     // TODO: Populate research metadata (paper, venue, metrics, etc.)
     research: undefined,
   },
