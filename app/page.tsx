@@ -1,5 +1,6 @@
 import { Hero } from '@/components/hero'
 import { SelectedWork } from '@/components/selected-work'
+import { Technology } from '@/components/technology'
 import { SiteNav } from '@/components/site-nav'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <Hero />
         <SelectedWork />
+        <Technology />
       </main>
       <footer className="dark bg-background text-foreground">
         <div className="mx-auto flex w-full max-w-[100rem] items-baseline justify-between px-6 py-10 md:px-12">
