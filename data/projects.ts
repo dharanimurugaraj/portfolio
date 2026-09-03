@@ -28,7 +28,7 @@ export const projects: Project[] = [
     displayTitle: 'Fincore',
     tagline: 'AI accounting automation platform',
     summary:
-      'An AI accounting automation platform that reads, classifies, and reconciles financial records — turning manual bookkeeping into a supervised, auditable pipeline.',
+      'An AI accounting automation platform that extracts, classifies, and reconciles financial records from bank statements — turning manual bookkeeping into a supervised, auditable, deterministic pipeline.',
     category: 'product',
     year: '2026',
     emphasis: 'feature',
@@ -81,7 +81,7 @@ export const projects: Project[] = [
     displayTitle: 'MedVision',
     tagline: 'Deep-learning medical imaging research',
     summary:
-      'Deep-learning research on medical imaging — segmentation and classification models developed and validated against clinical datasets.',
+      'Deep-learning research on medical imaging — a chest-radiograph pipeline combining transformer classification, graph-based reasoning, explainability, and uncertainty estimation, evaluated on a public research dataset.',
     category: 'research',
     year: '2025',
     emphasis: 'research',

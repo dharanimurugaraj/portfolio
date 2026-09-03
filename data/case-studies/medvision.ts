@@ -2,7 +2,7 @@ import type { CaseStudyContent } from '../types'
 
 export const medvisionCaseStudy: CaseStudyContent = {
   overview:
-    'A research prototype exploring a graph-based, two-stage, uncertainty-aware explainable diagnostic system for chest radiographs.',
+    'A research prototype exploring a graph-based, four-stage, uncertainty-aware explainable diagnostic system for chest radiographs.',
   sections: [
     {
       id: 'problem',

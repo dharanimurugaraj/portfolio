@@ -61,8 +61,8 @@ export function CaseStudyHero({ project }: { project: Project }) {
                         <path d={icon.path} />
                       </svg>
                     ) : (
-                      <div className="flex size-4 shrink-0 items-center justify-center bg-muted/30 text-[6px] font-mono tracking-tighter text-muted-foreground rounded-[2px]">
-                        {tech.name.slice(0, 2).toUpperCase()}
+                      <div className="flex h-4 min-w-4 shrink-0 items-center justify-center bg-muted/30 px-1 text-[6px] font-mono font-semibold tracking-tight text-muted-foreground rounded-[2px]">
+                        {tech.name.toUpperCase()}
                       </div>
                     )}
                     <span className="font-mono text-[11px] tracking-wide text-foreground">

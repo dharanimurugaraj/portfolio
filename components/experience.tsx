@@ -22,7 +22,7 @@ export function Experience() {
 
         {experience.map((item, idx) => (
           <div
-            key={`${item.organization}-${idx}`}
+            key={`${item.role}-${idx}`}
             className="grid grid-cols-1 gap-8 md:grid-cols-12"
           >
             {/* Left column: section index */}
@@ -35,20 +35,15 @@ export function Experience() {
             {/* Right column: role details */}
             <div className="md:col-span-9 lg:col-span-8">
 
-              {/* Organization + role header */}
+              {/* Role header */}
               <div className="flex flex-col gap-2">
                 <h2 className="font-sans text-[clamp(1.5rem,3vw,2.5rem)] leading-[1.0] font-bold tracking-[-0.02em] text-foreground">
-                  {item.organization}
+                  {item.role}
                 </h2>
                 <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1 mt-1">
-                  <h3 className="font-sans text-base font-semibold text-foreground/80">
-                    {item.role}
-                  </h3>
                   <span className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground uppercase">
                     {item.type}
                   </span>
-                </div>
-                <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1 mt-1">
                   <span className="font-mono text-xs tracking-[0.2em] text-muted-foreground">
                     {formatDuration(item.startDate, item.endDate)}
                   </span>
