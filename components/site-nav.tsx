@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
+import { contact } from '@/data/contact'
 
 const links = [
   { label: 'ABOUT', href: '#about' },
@@ -9,7 +10,6 @@ const links = [
   { label: 'TECH STACK', href: '#technology' },
   { label: 'WORK', href: '#work' },
   { label: 'CONTACT', href: '#contact' },
-  { label: 'RESUME', href: '#resume' },
 ]
 
 export function SiteNav() {
@@ -103,6 +103,15 @@ export function SiteNav() {
             >
               LINKEDIN
             </a>
+            <a
+              href={contact.socials.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Resume, opens in a new tab"
+              className="font-mono text-xs tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
+            >
+              RESUME
+            </a>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -185,6 +194,15 @@ export function SiteNav() {
             className="font-mono text-sm tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
           >
             LINKEDIN
+          </a>
+          <a
+            href={contact.socials.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume, opens in a new tab"
+            className="font-mono text-sm tracking-[0.2em] text-muted-foreground transition-colors hover:text-foreground"
+          >
+            RESUME
           </a>
         </div>
       </div>

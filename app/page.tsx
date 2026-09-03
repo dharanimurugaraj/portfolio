@@ -5,6 +5,7 @@ import { About } from '@/components/about'
 import { Experience } from '@/components/experience'
 import { Contact } from '@/components/contact'
 import { SiteNav } from '@/components/site-nav'
+import { contact } from '@/data/contact'
 
 export default function Home() {
   return (
@@ -44,6 +45,15 @@ export default function Home() {
               aria-label="LinkedIn"
             >
               LINKEDIN
+            </a>
+            <a
+              href={contact.socials.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-[10px] tracking-[0.25em] text-muted-foreground transition-colors hover:text-accent"
+              aria-label="Resume"
+            >
+              RESUME
             </a>
           </div>
         </div>

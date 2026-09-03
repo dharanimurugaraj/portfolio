@@ -12,6 +12,7 @@ export interface ContactData {
   socials: {
     github: string
     linkedin: string
+    resume: string
   }
 }
 
@@ -25,5 +26,6 @@ export const contact: ContactData = {
   socials: {
     github: 'https://github.com/dharanimurugaraj',
     linkedin: 'https://www.linkedin.com/in/dharani-murugaraj',
+    resume: 'https://drive.google.com/file/d/1dGFTsNhMgNzPw9flyOE2F-smEoCpbXk6/view?usp=sharing',
   },
 }
