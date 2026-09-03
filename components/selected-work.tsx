@@ -76,7 +76,7 @@ function ResearchSpread({ project }: { project: Project }) {
             />
           </div>
           <p className="mt-3 font-mono text-[10px] leading-relaxed tracking-[0.15em] text-muted-foreground">
-            FIG. {project.index} — SEGMENTATION OUTPUT, VALIDATION SET
+            FIG. {project.index} — EXPLAINABILITY OUTPUT, VALIDATION SET
           </p>
         </div>
         <div className="flex flex-col justify-center lg:col-span-5 lg:col-start-7">

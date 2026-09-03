@@ -44,8 +44,8 @@ function TechItem({ tech }: { tech: TechnologyType }) {
             <path d={icon.path} />
           </svg>
         ) : (
-          <div className="flex size-5 shrink-0 items-center justify-center bg-muted/30 text-[8px] font-mono tracking-tighter text-muted-foreground transition-colors duration-300 group-hover:bg-foreground group-hover:text-background group-focus-within:bg-foreground group-focus-within:text-background rounded-sm">
-            {tech.name.slice(0, 2).toUpperCase()}
+          <div className="flex h-5 min-w-5 shrink-0 items-center justify-center bg-muted/30 px-1 text-[8px] font-mono font-semibold tracking-tight text-muted-foreground transition-colors duration-300 group-hover:bg-foreground group-hover:text-background group-focus-within:bg-foreground group-focus-within:text-background rounded-sm">
+            {tech.name.toUpperCase()}
           </div>
         )}
         <span className="font-sans text-sm md:text-base font-medium tracking-tight text-foreground/70 transition-colors duration-300 group-hover:text-foreground group-focus-within:text-foreground">

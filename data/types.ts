@@ -175,7 +175,8 @@ export interface Project {
 // ─── Experience ───────────────────────────────────────────────────────────────
 
 export interface ExperienceItem {
-  organization: string
+  /** Company/organization name. Optional — omit to keep the engagement unattributed on the public site. */
+  organization?: string
   role: string
   type: 'full-time' | 'internship' | 'contract' | 'research' | 'open-source'
   /** 'YYYY-MM' format. */

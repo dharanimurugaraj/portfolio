@@ -118,7 +118,7 @@ export function Contact() {
                     required
                     disabled={status === 'sending' || status === 'success'}
                     className="border-b border-border bg-transparent pb-3 pt-2 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-foreground focus:outline-none disabled:opacity-50"
-                    placeholder="Jane Doe"
+                    placeholder="Your name"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -132,7 +132,7 @@ export function Contact() {
                     required
                     disabled={status === 'sending' || status === 'success'}
                     className="border-b border-border bg-transparent pb-3 pt-2 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-foreground focus:outline-none disabled:opacity-50"
-                    placeholder="jane@example.com"
+                    placeholder="you@example.com"
                   />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export function Contact() {
                   required
                   disabled={status === 'sending' || status === 'success'}
                   className="border-b border-border bg-transparent pb-3 pt-2 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-foreground focus:outline-none disabled:opacity-50"
-                  placeholder="What's this regarding?"
+                  placeholder="What would you like to discuss?"
                 />
               </div>
 
@@ -163,7 +163,7 @@ export function Contact() {
                   rows={4}
                   disabled={status === 'sending' || status === 'success'}
                   className="min-h-[120px] resize-y border-b border-border bg-transparent pb-3 pt-2 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-foreground focus:outline-none disabled:opacity-50"
-                  placeholder="Hello..."
+                  placeholder="Tell me a little about the project or opportunity..."
                 />
               </div>
 

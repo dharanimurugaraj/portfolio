@@ -14,10 +14,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dharani — Building Intelligent Systems',
+  title: 'Dharani Murugaraj — AI Full-Stack Developer',
   description:
-    'Dharani is an AI-focused software engineer designing and building intelligent products and systems — from research concepts to functioning software.',
-  generator: 'v0.app',
+    'Dharani Murugaraj is an AI-focused software engineer designing and building intelligent products and systems — from research concepts to functioning software.',
   icons: {
     icon: [
       {

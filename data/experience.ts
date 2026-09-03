@@ -9,19 +9,18 @@ import type { ExperienceItem } from './types'
 
 export const experience: ExperienceItem[] = [
   {
-    organization: 'Vyrenzo',
     role: 'Freelance AI Full Stack Engineer',
     type: 'contract',
     startDate: '2026-04',
     // endDate is intentionally absent — role is ongoing
     location: 'Remote',
     description:
-      'Designing and deploying AI-powered document intelligence and manufacturing operations platforms.',
+      'Design and deploy AI-powered document intelligence and manufacturing operations platforms for a private client.',
     achievements: [
-      'Built AI-powered workflows for document processing, information extraction, and operational automation using Python, FastAPI, and LLM APIs.',
-      'Developing an AI-powered manufacturing operations platform focused on inventory management, purchase order processing, and Certificate of Analysis workflows.',
-      'Designed document intelligence workflows to extract and structure information from operational documents, reducing manual data entry and processing effort.',
-      'Developed backend services and deployment workflows using PostgreSQL, Firebase, Cloudflare R2, and Vercel.',
+      'Build AI-powered workflows for document processing, information extraction, and operational automation using Python, FastAPI, and LLM APIs.',
+      'Develop an AI-powered manufacturing operations platform focused on inventory management, purchase order processing, and Certificate of Analysis workflows.',
+      'Design document intelligence workflows to extract and structure information from operational documents, reducing manual data entry and processing effort.',
+      'Develop backend services and deployment workflows using PostgreSQL, Firebase, Cloudflare R2, and Vercel.',
     ],
     technologies: ['python', 'fastapi', 'postgresql', 'firebase', 'vercel'],
   },
