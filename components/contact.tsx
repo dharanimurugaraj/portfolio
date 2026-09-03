@@ -100,6 +100,18 @@ export function Contact() {
                 </span>
                 <span className="sr-only">, opens in a new tab</span>
               </a>
+              <a
+                href={contact.socials.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] text-muted-foreground transition-colors hover:text-accent"
+              >
+                RESUME
+                <span className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                  <ArrowUpRight className="size-3" />
+                </span>
+                <span className="sr-only">, opens in a new tab</span>
+              </a>
             </div>
           </div>
 
